@@ -22,7 +22,7 @@ body, html {
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    background-image: url('https://sdmntprcentralus.oaiusercontent.com/files/00000000-98dc-61f5-ba73-6425abddd5dc/raw?se=2025-08-15T11%3A13%3A54Z&sp=r&sv=2024-08-04&sr=b&scid=52d69316-959c-5847-890c-6881f1726cb3&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-15T01%3A26%3A15Z&ske=2025-08-16T01%3A26%3A15Z&sks=b&skv=2024-08-04&sig=h5lS0cvAOamKw8C2%2BvyChiru%2BZ373Z%2BfV5kzj/Kyxw0%3D');
+    background-image: url('https://tse2.mm.bing.net/th/id/OIP.HELXm3R-3kkK9_t8zKaU-gHaHa?pid=Api&P=0&h=180');
     background-size: cover;
     background-position: center;
 }
@@ -55,7 +55,7 @@ body, html {
 /* Hero Section */
 .hero {
     height: 85vh;
-    background-image: url('https://images.unsplash.com/photo-1533503759185-befe0128e1a2?q=80&w=1200&auto=format&fit=crop');
+    background-image: url('https://images.unsplash.com/photo-1716910729414-302a85b5c3ce?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -81,7 +81,7 @@ body, html {
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     margin-bottom: 12px;
 }
 
