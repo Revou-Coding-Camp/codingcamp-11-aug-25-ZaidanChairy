@@ -1,4 +1,3 @@
-/* Global Reset */
 body, html {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@ body, html {
     align-items: center;
     justify-content: space-between;
     padding: 14px 40px;
-    background-color: #0f172a; /* Navy */
+    background-color: #0f172a; 
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -23,7 +22,7 @@ body, html {
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    background-image: url(https://imgx.parapuan.co/crop/0x0:0x0/945x630/photo/2021/08/19/istock-1263873825jpg-20210819060047.jpg);
+    background-image: url('https://sdmntprcentralus.oaiusercontent.com/files/00000000-98dc-61f5-ba73-6425abddd5dc/raw?se=2025-08-15T11%3A13%3A54Z&sp=r&sv=2024-08-04&sr=b&scid=52d69316-959c-5847-890c-6881f1726cb3&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-15T01%3A26%3A15Z&ske=2025-08-16T01%3A26%3A15Z&sks=b&skv=2024-08-04&sig=h5lS0cvAOamKw8C2%2BvyChiru%2BZ373Z%2BfV5kzj/Kyxw0%3D');
     background-size: cover;
     background-position: center;
 }
@@ -38,30 +37,43 @@ body, html {
 }
 
 .nav-link {
-    color: #f1f5f9;
-    padding: 8px 16px;
-    font-size: 1rem;
+    background-color: #f1f5f9;
+    color: #1f2937;
+    padding: 8px 30px;
+    font-size: 1.3rem;
     border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 30px;
 }
 
 .nav-link:hover {
     background-color: #1e293b;
+    color: #f1f5f9;
 }
 
 /* Hero Section */
 .hero {
     height: 85vh;
-    background-image: url(https://images.unsplash.com/photo-1533503759185-befe0128e1a2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://wallpaperaccess.com/full/14259.jpghttps://www.freepik.com/free-photo/grey-scale-shot-lake-surrounded-by-mountains-trees_9931649.htm#fromView=search&page=1&position=4&uuid=6225118c-075c-4c9b-8f18-54ba4cc8a7a8&query=black+and+white+free+1920x1080p);
+    background-image: url('https://images.unsplash.com/photo-1533503759185-befe0128e1a2?q=80&w=1200&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding-left: 40px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
 }
 
 .hero-content {
+    position: relative;
     padding: 30px;
     border-radius: 8px;
     color: white;
@@ -69,16 +81,15 @@ body, html {
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 12px;
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
-/* Button */
 .btn-primary {
     background-color: #0f172a;
     color: white;
@@ -89,12 +100,68 @@ body, html {
     font-weight: 500;
     transition: background-color 0.3s;
 }
-
 .btn-primary:hover {
     background-color: #1e293b;
 }
 
-/* Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #e5e7eb; 
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-title {
+    font-size: 1.5rem;
+    margin: 12px 0 8px;
+    padding: 0 12px 12px;
+}
+
+.portfolio-description {
+    font-size: 1rem;
+    color: #6b7280;
+    padding: 0 12px 12px;
+}
+
+
 .section {
     padding: 60px 40px;
 }
@@ -112,8 +179,18 @@ body, html {
     max-width: 800px;
 }
 
-/* Contact Form */
+
+.form-output-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     max-width: 400px;
 }
 
@@ -133,9 +210,37 @@ body, html {
     outline: none;
     transition: border-color 0.3s;
 }
-
 .input:focus {
     border-color: #0f172a;
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+
+.contact-form .btn-primary {
+    background-color: #1f2937;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+}
+.contact-form .btn-primary:hover {
+    background-color: #1f2937;
+}
+
+
+.output-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #fff;
+    margin: auto;
 }
 
 /* Footer */

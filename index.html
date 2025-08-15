@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Yama</title>
+    <title>ZCreations</title>
 
-    <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -32,47 +31,104 @@
         <!-- Home -->
         <section id="home-page" class="section hero">
             <div class="hero-content">
-                <h1 class="title">Welcome <span id="user-greeting"></span> to Website MedCare</h1>
+                <h1 class="title">Hi <span id="user-greeting"></span>, Welcome To Website ZCreations</h1>
                 <p class="subtitle">Delivering quality and excellence for your business needs.</p>
                 <a href="#our-profile" class="btn-primary">Learn More</a>
             </div>
         </section>
 
         <!-- Our Profile -->
-        <section id="our-profile" class="section">
+        <section id="our-profile" class="section profile">
             <header>
                 <h1 class="section-title">Our Profile</h1>
             </header>
-            <p class="text">We are a dedicated team of professionals committed to delivering innovative solutions with precision and integrity. Our mission is to help businesses achieve their goals through quality work and excellent service.</p>
+            <p class="text">Zcreations Studio offers Game Design, UI/UX Design, and Graphic Design services, combining creativity and technology to deliver innovative, aesthetic digital works that provide the best user experience.
+</p>
+            <div class="profile">
+                <img src="https://media.istockphoto.com/id/1438574036/id/vektor/tingkatkan-game-konsol-atau-layar-piksel-arcade-8bit.jpg?s=612x612&w=0&k=20&c=od0p2qevOC1a-BoorH3CLwx9_Hn-RHoMJo9jKMTbk1g=" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <h1 class="profile-name">Game Design</h1>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="https://media.istockphoto.com/id/1403155430/id/vektor/bentuk-geometris-modern-dalam-gaya-minimal-trendi-koleksi-vektor-bentuk-dan-elemen-abstrak.jpg?s=612x612&w=0&k=20&c=im1lktxvgu38LVOxh-4xK5LHSOfdM379LwFXdzKXbgk=" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <h1 class="profile-name">Graphic Design</h1>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="https://media.istockphoto.com/id/1918987312/id/foto/desainer-grafis-ux-merencanakan-prototipe-pengembangan-proses-aplikasi.jpg?s=612x612&w=0&k=20&c=BJJtdK-6At7vAoLSv5B4mSRMnRLZxSS-oIr3doQNag8=" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <h1 class="profile-name">UI UX Design</h1>
+                </div>
         </section>
 
+        <hr/>
+
         <!-- Portfolio -->
-        <section id="portfolio" class="section">
+        <section id="portfolio" class="section portfolio">
             <header>
                 <h1 class="section-title">Portfolio</h1>
             </header>
-            <p class="text">From creative designs to functional web solutions, our portfolio reflects our expertise across multiple industries. We focus on clean design, user experience, and impactful results.</p>
+            <p class="text"> Zcreations Studio presents a portfolio highlighting our expertise in Game Design and UI/UX Design. From crafting immersive and interactive game worlds to designing intuitive, user-friendly interfaces, each project is a blend of creativity and functionality aimed at delivering exceptional digital experiences.
+</p>
+            <div class="portfolio-item">
+                <img src="https://media.istockphoto.com/id/1218511457/id/foto/tampilan-teratas-pengembang-ux-asia-dan-brainstorming-desainer-ui-tentang-desain-wireframe.jpg?s=612x612&w=0&k=20&c=3DYJAGzedjhNopyLWxlYRcOHmnYFpW9hyelqbi2-bT8=" alt="Portfolio Item" class="portfolio-image">
+                <h2 class="portfolio-title">UI UX Design Project</h2>
+                <p class="portfolio-description">Redesign Website Laundryku</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://media.istockphoto.com/id/477065672/id/vektor/antarmuka-pengguna-untuk-permainan.jpg?s=612x612&w=0&k=20&c=nr07_Pblye0A3B2mV8kF_bqzrA_fJ1M1nP8l83y-8AQ=" alt="Portfolio Item" class="portfolio-image">
+                <h2 class="portfolio-title">Game Design Project</h2>
+                <p class="portfolio-description">Designing 2D game projects</p>
+            </div>
         </section>
 
+        <hr/>
+
         <!-- Message Us -->
-        <section id="message-us" class="section">
-            <header>
-                <h1 class="section-title">Message Us</h1>
-            </header>
-            <form onsubmit="event.preventDefault(); sendMessage();" class="contact-form">
-                <label for="user-message" class="label">Your Message:</label>
-                <input id="user-message" type="text" class="input" placeholder="Type your message...">
-                <button type="submit" class="btn-primary">Send</button>
-            </form>
-        </section>
-    </main>
+<section id="message-us" class="section message">
+    <header>
+        <h1 class="message-title">Message Us</h1>
+    </header>
+    <div class="form-output-wrapper">
+        <!-- Form -->
+        <form onsubmit="event.preventDefault(); sendMessage();" class="contact-form">
+            <label for="user-name" class="label">Nama:</label>
+            <input id="user-name" type="text" class="input" placeholder="Masukkan nama..." required>
+
+            <label for="user-date" class="label">Tanggal Lahir:</label>
+            <input id="user-date" type="date" class="input" required>
+
+            <label class="label">Jenis Kelamin:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+                <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+            </div>
+
+            <label for="user-message" class="label">Pesan:</label>
+            <textarea id="user-message" class="input" placeholder="Tulis pesan..." required></textarea>
+
+            <button type="submit" class="btn-primary">Kirim</button>
+        </form>
+
+        <!-- Output -->
+        <div id="output" class="output-box">
+            <p><strong>Current time:</strong></p>
+            <p><strong>Nama:</strong></p>
+            <p><strong>Tanggal Lahir:</strong></p>
+            <p><strong>Jenis Kelamin:</strong></p>
+            <p><strong>Pesan:</strong></p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
-        <span>&copy; 2025 Portfolio Yama. All rights reserved.</span>
+        <span>&copy; 2025 Portfolio ZCreations. All rights reserved.</span>
     </footer>
 
-    <!-- JS External -->
     <script src="js/script.js"></script>
 </body>
 
