@@ -1,5 +1,148 @@
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    background-color: #0f172a; /* Navy */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo */
 .main-logo {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
     background-image: url(https://imgx.parapuan.co/crop/0x0:0x0/945x630/photo/2021/08/19/istock-1263873825jpg-20210819060047.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #f1f5f9;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #1e293b;
+}
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    background-image: url(https://images.unsplash.com/photo-1533503759185-befe0128e1a2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://wallpaperaccess.com/full/14259.jpghttps://www.freepik.com/free-photo/grey-scale-shot-lake-surrounded-by-mountains-trees_9931649.htm#fromView=search&page=1&position=4&uuid=6225118c-075c-4c9b-8f18-54ba4cc8a7a8&query=black+and+white+free+1920x1080p);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.hero-content {
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #0f172a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1e293b;
+}
+
+/* Section */
+.section {
+    padding: 60px 40px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #4b5563;
+    max-width: 800px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #0f172a;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: #0f172a;
+    color: #e5e7eb;
 }
